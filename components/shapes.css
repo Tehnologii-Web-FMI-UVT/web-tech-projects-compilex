@@ -1,0 +1,34 @@
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(9, 196, 71, 0.1);
+    filter: blur(70px);
+  }
+  
+  .shape1 {
+    width: 200px;
+    height: 200px;
+    top: 30vh;  /* Adjust as needed */
+    left: 30vw; /* Adjust as needed */
+    animation: moveShape1 6s ease-in-out infinite;
+  }
+  
+  .shape2 {
+    width: 300px;
+    height: 300px;
+    bottom: 30vh; /* Adjust as needed */
+    right: 30vw; /* Adjust as needed */
+    animation: moveShape2 8s ease-in-out infinite;
+  }
+
+  @keyframes moveShape1 {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(50px, 25px); }  /* Reduced movement */
+    100% { transform: translate(0, 0); }
+  }
+  
+  @keyframes moveShape2 {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-50px, -25px); } /* Reduced movement */
+    100% { transform: translate(0, 0); }
+  }
